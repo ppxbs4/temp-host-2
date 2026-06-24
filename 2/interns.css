@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:600px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.input-section{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+input{
+    flex:1;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+#addBtn{
+    padding:12px 18px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.filters{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.filter-btn{
+    padding:10px 15px;
+    border:none;
+    cursor:pointer;
+    border-radius:8px;
+    background:#e5e7eb;
+}
+
+.filter-btn.active{
+    background:#2563eb;
+    color:white;
+}
+
+#taskList{
+    list-style:none;
+}
+
+.task{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    margin-bottom:10px;
+    background:#f8fafc;
+    border-radius:10px;
+}
+
+.task.completed span{
+    text-decoration:line-through;
+    color:gray;
+}
+
+.actions{
+    display:flex;
+    gap:8px;
+}
+
+.actions button{
+    border:none;
+    padding:8px 10px;
+    cursor:pointer;
+    border-radius:6px;
+}
+
+.complete-btn{
+    background:#22c55e;
+    color:white;
+}
+
+.edit-btn{
+    background:#f59e0b;
+    color:white;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+}
+
+@media(max-width:600px){
+
+.input-section{
+    flex-direction:column;
+}
+
+#addBtn{
+    width:100%;
+}
+
+}
